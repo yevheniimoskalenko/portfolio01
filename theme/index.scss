@@ -1,6 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+p,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+.el-main {
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    font-size: 26px;
+  }
+  span {
+    padding: 20px;
+  }
 }
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Montserrat', sans-serif;

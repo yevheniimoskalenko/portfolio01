@@ -10,7 +10,7 @@
           <small>Full stack vue.js & node.js</small>
           <p>
             Hi, my name is Yevhenii, I`am from Ukraine, I live in city Kharkiv,
-            I 23 years, I like web development, namely vue.js and node.js
+            I`am 23 years old, I like web development, namely vue.js and node.js
           </p>
         </div>
       </div>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-//
 export default {
   data() {
     return {
