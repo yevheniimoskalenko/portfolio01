@@ -1,17 +1,20 @@
 <template>
   <div class="header">
     <div class="background">
-      <div class="profile">
-        <div class="avatar">
-          <el-avatar :size="150" :src="url" />
-        </div>
-        <div class="name">
-          <span>Yevhenii Moskalenko</span>
-          <small>Full stack vue.js & node.js</small>
-          <p>
-            Hi, my name is Yevhenii, I`am from Ukraine, I live in city Kharkiv,
-            I`am 23 years old, I like web development, namely vue.js and node.js
-          </p>
+      <div class="wrapper">
+        <div class="profile">
+          <div class="avatar">
+            <el-avatar :size="150" :src="url" />
+          </div>
+          <div class="name">
+            <span>Yevhenii Moskalenko</span>
+            <small>Full stack vue.js & node.js</small>
+            <p>
+              Hi, my name is Yevhenii, I`am from Ukraine, I live in city
+              Kharkiv, I`am 23 years old, I like web development, namely vue.js
+              and node.js
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -36,6 +39,7 @@ export default {
   align-items: center;
   padding: 20px 0;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -56,7 +60,12 @@ export default {
     background: #29292a48;
   }
   .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .name {
+      text-align: center;
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -79,6 +88,17 @@ export default {
         line-height: 50px;
         font-size: 36px;
         font-family: 'Quicksand', sans-serif;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    .profile {
+      .name {
+        small {
+          font-size: 25px;
+        }
       }
     }
   }

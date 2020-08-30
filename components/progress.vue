@@ -1,36 +1,53 @@
 <template>
   <div class="progress">
-    <div class="header">
-      <h3>Progress</h3>
-      <span>My work progress</span>
-    </div>
-    <el-row :gutter="30">
-      <el-col :span="8">
-        <el-card shadow="hover">
-          <div class="progress__skill">
-            <el-progress type="circle" :percentage="65" />
-            <span>JavaScript</span>
-          </div></el-card
-        >
-      </el-col>
-      <el-col :span="8"
-        ><el-card shadow="hover">
-          <div class="progress__skill">
-            <el-progress type="circle" :percentage="85" />
-            <span>html+css</span>
+    <div class="wrapper">
+      <div class="title">
+        <h3>Progress</h3>
+        <p>My work progress</p>
+      </div>
+      <el-row :gutter="30">
+        <el-col :span="6" :xs="24" :sm="12" :md="6">
+          <div class="item_progress">
+            <el-card shadow="hover">
+              <div class="progress__skill">
+                <el-progress type="circle" :percentage="65" color="#30BAE7" />
+                <span>JavaScript</span>
+              </div>
+            </el-card>
           </div>
-        </el-card></el-col
-      >
-      <el-col :span="8"
-        ><el-card shadow="hover">
-          <div class="progress__skill">
-            <el-progress type="circle" :percentage="60" />
-            <span>node.js</span>
-          </div></el-card
-        ></el-col
-      >
-    </el-row>
-    <p>It's not my maximum, i don't know how many, I`am have</p>
+        </el-col>
+        <el-col :span="6" :xs="24" :sm="12" :md="6">
+          <div class="item_progress">
+            <el-card shadow="hover">
+              <div class="progress__skill">
+                <el-progress type="circle" :percentage="85" color="#D8567F" />
+                <span>html+css</span>
+              </div>
+            </el-card>
+          </div>
+        </el-col>
+        <el-col :span="6" :xs="24" :sm="12" :md="6">
+          <div class="item_progress">
+            <el-card shadow="hover">
+              <div class="progress__skill">
+                <el-progress type="circle" :percentage="60" color="#EB7D4B" />
+                <span>node.js</span>
+              </div>
+            </el-card>
+          </div>
+        </el-col>
+        <el-col :span="6" :xs="24" :sm="12" :md="6">
+          <div class="item_progress">
+            <el-card shadow="hover">
+              <div class="progress__skill">
+                <el-progress type="circle" :percentage="85" color="#5AC8A9" />
+                <span>vue.js</span>
+              </div>
+            </el-card>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -44,8 +61,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  span {
+  p {
     padding: 20px;
   }
+  span {
+    padding-top: 20px;
+  }
+}
+.item_progress {
+  margin-top: 20px;
 }
 </style>
